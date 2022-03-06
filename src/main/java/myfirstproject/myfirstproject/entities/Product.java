@@ -10,15 +10,28 @@ public class Product implements Serializable {
 	private Long id;
 	private String name;
 	private double price;
+	private Category category;
+	
 	public Product() {
 		super();
 	}
-	public Product(Long id, String name, double price) {
+	
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public Product(Long id, String name, double price, Category category) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
+		this.category = category;
 	}
+
 	public Long getId() {
 		return id;
 	}
