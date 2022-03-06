@@ -25,19 +25,19 @@ public class MyfirstprojectApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		Category cat = new Category(1L,"Eletronics");
-		Category cat2 = new Category(2L,"Books");
-		Category cat3 = new Category(3L,"Eletrodomesticos");
-		Category cat4 = new Category(4L,"Vestuario");
+		Category cat = new Category(null,"Eletronics");
+		Category cat2 = new Category(null,"Books");
+		Category cat3 = new Category(null,"Eletrodomesticos");
+		Category cat4 = new Category(null,"Vestuario");
 		
-		Product p1 = new Product(1L, "Playstation 5", 5434.99, cat);
-		Product p2 = new Product(2L, "Notebook acer IUO1232", 1234.99, cat);
-		Product p3 = new Product(3L, "Como fazer amigos e influenciar pessoas", 25.99, cat2);
-		Product p4 = new Product(4L, "A lógica do cisne negro", 34.99, cat2);
-		Product p5 = new Product(5L, "Geladeira frost free", 734.99, cat3);
-		Product p6 = new Product(6L, "Microondas eletrolux", 834.99, cat3);
-		Product p7 = new Product(7L, "Camiseta simples azul", 43.99, cat4);
-		Product p8 = new Product(8L, "Calça jeans slim", 54.99, cat4);
+		Product p1 = new Product(null, "Playstation 5", 5434.99, cat);
+		Product p2 = new Product(null, "Notebook acer IUO1232", 1234.99, cat);
+		Product p3 = new Product(null, "Como fazer amigos e influenciar pessoas", 25.99, cat2);
+		Product p4 = new Product(null, "A lógica do cisne negro", 34.99, cat2);
+		Product p5 = new Product(null, "Geladeira frost free", 734.99, cat3);
+		Product p6 = new Product(null, "Microondas eletrolux", 834.99, cat3);
+		Product p7 = new Product(null, "Camiseta simples azul", 43.99, cat4);
+		Product p8 = new Product(null, "Calça jeans slim", 54.99, cat4);
 		cat.getProducts().addAll(Arrays.asList(p1,p2));
 		cat2.getProducts().addAll(Arrays.asList(p3,p4));
 		cat3.getProducts().addAll(Arrays.asList(p5,p6));
